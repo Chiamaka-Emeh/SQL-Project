@@ -94,7 +94,6 @@ ii. Transactions where category is ‘Clothing’ and quantity > 4 in Nov-2022
 
 Result: No transaction matched all the conditions in the query.
 
-
 iii. Calculate total sales for each category.
 ![Total Sales by Category](Q3_sales_by_category.png)
 
