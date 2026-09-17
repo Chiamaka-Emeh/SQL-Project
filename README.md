@@ -9,9 +9,8 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Cleaning](#data-cleaning)
 - [Answers To Business Questions](#answers-to-business-questions)
-- [Findings and Business Interpretation](#findings-and-business-interpretation)
+- [Key Findings](#key_findings)
 - [Recommendations](#recommendations)
-- [Project Limitations](#project-limitations)
 - [Project Documentation](#project-documentation)
 
  ## Project Overview
@@ -53,7 +52,7 @@ The available fields included:
 
 The original CSV dataset used for the project is no longer available. The project report and screenshots of the SQL queries and results are included in this repository to preserve the work carried out during the analysis.
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
 Exploratory data analysis (EDA) was carried out before answering the
 business questions.
@@ -135,4 +134,23 @@ Result: Clothing had the highest number of unique customers, followed closely by
 x. Create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17).
 ![Orders by Time of Day](Q10_sales_by_time_of_day.png)
 
-Result: Evening had the highest number of orders in the dataset, followed by morning and afternoon.
+Result: Evening had the highest number of orders, followed by morning and afternoon.
+
+## Key Findings
+- The data-quality check found missing values before the analysis. There were 10 missing age records and three missing records each for quantity, price per unit, COGS and total sales.
+- Electronics recorded the highest total sales at 313,810, followed closely by Clothing at 311,070, while Beauty recorded the lowest total sales at 286,450.
+- Beauty had 624 transactions, compared with 701 for Clothing and 698 for Electronics. Beauty generated a higher average value per transaction but had fewer transactions overall.
+- December was the highest-selling month in both years, with total monthly sales of 72,880 in December 2022 and 69,145 in December 2023.
+- Customer_Id 3 recorded the highest total spending among the five highest-spending customers at 38,440.
+- Clothing had the highest number of unique customers at 145, followed by Electronics at 144 and Beauty at 141.
+- There was highest number of orders in the evening, with 1,275 evening orders, compared with 555 in the morning and 164 in the afternoon.
+
+## Recommendations
+- Check data quality before analysis.
+- Maintain the strong sales performance of Electronics and Clothing through adequate stock, prominent placement and selective promotional offers.
+- Increase the number of Beauty transactions through bundle offers and buy-more incentives.
+- Prepare for the December increase in sales with sufficient inventory and promotional activities such as holiday-season bundles and gift-oriented product promotions.
+- Retain and engage high-spending customers through loyalty rewards and targeted offers.
+- Match operations to evening demand by ensuring product availability and sufficient customer-service capacity during the busiest period.
+
+## Project Documentation
