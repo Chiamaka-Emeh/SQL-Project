@@ -15,9 +15,7 @@
 - [Project Documentation](#project-documentation)
 
  ## Project Overview
-This project involved analysing retail sales data using Microsoft SQL Server. The analysis covered exploratory data analysis, data cleaning and
-SQL queries used to examine sales performance, customer purchasing patterns and transaction activities. The project also involved answering a series of business questions
-and interpreting the results from the analysis.
+This project involved analysing retail sales data using Microsoft SQL Server. The analysis covered exploratory data analysis, data cleaning and SQL queries used to examine sales performance, customer purchasing patterns and transaction activities. The project also involved answering a series of business questions and interpreting the results from the analysis.
 
 ## Objectives
 
@@ -53,8 +51,7 @@ The available fields included:
 - COGS
 - Total Sale
 
-The original CSV dataset used for the project is no longer available. The project report and screenshots of the SQL queries and results are
-included in this repository to preserve the work carried out during the analysis.
+The original CSV dataset used for the project is no longer available. The project report and screenshots of the SQL queries and results are included in this repository to preserve the work carried out during the analysis.
 
 # Exploratory Data Analysis
 
@@ -82,9 +79,7 @@ The query ran successfully and gave TotalRows = 2000
 sales-by-
 The columns were checked for missing values before the analysis. The check identified: 10 missing age records, 3 missing quantity records, 3 missing price-per-unit records, 3 missing COGS records, 3 missing total-sale records
 
-The missing age values were handled by creating an age_flag column
-to distinguish records where age was known from those where it was
-missing. Records with missing quantity, price per unit, COGS or total sale were removed because these fields were needed for the sales analysis.
+The missing age values were handled by creating an age_flag column to distinguish records where age was known from those where it was missing. Records with missing quantity, price per unit, COGS or total sale were removed because these fields were needed for the sales analysis.
 
 ## Answers To Business Questions
 The business questions were answered with SQL queries
@@ -99,7 +94,8 @@ ii. Transactions where category is ‘Clothing’ and quantity > 4 in Nov-2022
 
 Result: No transaction matched all the conditions in the query.
 
-iii. Calculate total sales for each category
+
+iii. Calculate total sales for each category.
 ![Total Sales by Category](Q3_sales_by_category.png)
 
 Result: Electronics recorded the highest total sales, followed closely by Clothing. Beauty recorded the lowest total sales among the three
