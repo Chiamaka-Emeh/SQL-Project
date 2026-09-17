@@ -4,7 +4,7 @@
 
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
-- [Tools Used](#tools-used)
+- [Tool Used](#tool-used)
 - [Dataset](#dataset)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Cleaning](#data-cleaning)
@@ -75,7 +75,6 @@ SELECT COUNT(*) AS TotalRows FROM [SQL - Retail Sales Analysis - SQL - Retail Sa
 The query ran successfully and gave TotalRows = 2000 
 
 ## Data Cleaning
-sales-by-
 The columns were checked for missing values before the analysis. The check identified: 10 missing age records, 3 missing quantity records, 3 missing price-per-unit records, 3 missing COGS records, 3 missing total-sale records
 
 The missing age values were handled by creating an age_flag column to distinguish records where age was known from those where it was missing. Records with missing quantity, price per unit, COGS or total sale were removed because these fields were needed for the sales analysis.
@@ -94,6 +93,7 @@ ii. Transactions where category is ‘Clothing’ and quantity > 4 in Nov-2022
 Result: No transaction matched all the conditions in the query.
 
 iii. Calculate total sales for each category.
+
 ![Total Sales by Category](Q3_sales_by_category.png)
 
 Result: Electronics recorded the highest total sales, followed closely by Clothing. Beauty recorded the lowest total sales among the three
