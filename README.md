@@ -79,7 +79,7 @@ SELECT COUNT(*) AS TotalRows FROM [SQL - Retail Sales Analysis - SQL - Retail Sa
 The query ran successfully and gave TotalRows = 2000 
 
 ## Data Cleaning
-
+sales-by-
 The columns were checked for missing values before the analysis. The check identified: 10 missing age records, 3 missing quantity records, 3 missing price-per-unit records, 3 missing COGS records, 3 missing total-sale records
 
 The missing age values were handled by creating an age_flag column
@@ -88,5 +88,56 @@ missing. Records with missing quantity, price per unit, COGS or total sale were 
 
 ## Answers To Business Questions
 The business questions were answered with SQL queries
+
 i.  Retrieve all columns for sales made on '2022-11-05'  
 ![Sales Made on November 5, 2022](Q1_sales_november_5_2022.png)
+
+Result: The query returned the sales records that matched the specified date. This was used to filter transactions based on a particular sale date.
+
+ii. Transactions where category is ‘Clothing’ and quantity > 4 in Nov-2022
+![Clothing Transactions in November 2022](Q2_clothing_november_2022.png)
+
+Result: No transaction matched all the conditions in the query.
+
+iii. Calculate total sales for each category
+![Total Sales by Category](Q3_sales_by_category_png)
+
+Result: Electronics recorded the highest total sales, followed closely by Clothing. Beauty recorded the lowest total sales among the three
+categories.
+
+iv. Find the average age of customers who purchased Beauty products (using age_flag) 
+![Average Age of Beauty Customers](Q4_beauty_average_age.png)
+
+Result: The customers with recorded ages who purchased Beauty products had an average age of 40 years. Records with missing age were excluded from the calculation.
+
+v. Find transactions where total sales were greater than 1,000.
+![Transactions with Total Sales Above 1000](Q5_sales_above_1000.png)
+
+Result: The query identified individual transactions where the recorded total sale was above 1,000.
+
+vi. Find the number of transactions by gender for each product category.
+![Transactions by Gender and Category](Q6_gender_category_transactions.png)
+
+Result: The number of transactions differed across gender and category. Clothing recorded slightly more male transactions, while Beauty
+recorded more female transactions in the available data.
+
+vii. Calculate the average sale for each month and find out the best-selling month in each year .
+![Average Sales by Month](Q7i_monthly_sales.png)
+![Best-Selling Month in Each Year](Q7ii_monthly_sales.png)
+
+Result: December recorded the highest total sales in both years.
+
+viii. Find the top 5 customers based on highest total sales.
+![Top 5 Customers by Total Spending](Q8_top_5_customers.png)
+
+Result: Customer_ID 3 recorded the highest total spending among the five customers identified.
+
+ix. Find the number of unique customers who purchased items from each category.
+![Unique Customers by Category](Q9_unique_customers.png)
+
+Result: Clothing had the highest number of unique customers, followed closely by Electronics and Beauty.
+
+x. Create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17).
+![Orders by Time of Day](Q10_sales_by_time_of_day.png)
+
+Result: Evening had the highest number of orders in the dataset, followed by morning and afternoon.
