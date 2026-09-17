@@ -154,3 +154,4 @@ Result: Evening had the highest number of orders, followed by morning and aftern
 - Match operations to evening demand by ensuring product availability and sufficient customer-service capacity during the busiest period.
 
 ## Project Documentation
+[Download SQL Project Documentation](SQL_PROJECT_RETAIL_ANALYSIS.pdf)
