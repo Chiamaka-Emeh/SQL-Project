@@ -89,3 +89,4 @@ missing. Records with missing quantity, price per unit, COGS or total sale were 
 ## Answers To Business Questions
 The business questions were answered with SQL queries
 i.  Retrieve all columns for sales made on '2022-11-05'  
+![Sales Made on November 5, 2022](Q1_sales_november_5_2022.png)
