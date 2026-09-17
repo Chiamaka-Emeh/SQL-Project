@@ -32,10 +32,10 @@ The main objectives of the analysis were to:
 - Examine monthly sales patterns.
 - Understand transaction activity at different times of the day.
 
-  ## Tools Used
+## Tools Used
 - Microsoft SQL Server
 
-  ## Dataset
+## Dataset
 
 The dataset contained 2,000 retail sales records.
 
@@ -100,7 +100,7 @@ ii. Transactions where category is ‘Clothing’ and quantity > 4 in Nov-2022
 Result: No transaction matched all the conditions in the query.
 
 iii. Calculate total sales for each category
-![Total Sales by Category](Q3_sales_by_category_png)
+![Total Sales by Category](Q3_sales_by_category.png)
 
 Result: Electronics recorded the highest total sales, followed closely by Clothing. Beauty recorded the lowest total sales among the three
 categories.
